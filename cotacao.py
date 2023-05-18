@@ -7,6 +7,6 @@ cotacao = requisicao.json()
 
 preco = float(cotacao['USD']['bid'])
 
-print("Moeda: " + cotacao['USD']['name'])
-print("Data: " + cotacao['USD']['create_date'])
-print("Valor Atual: R$ " + cotacao['USD']['bid'])
+print(f"Moeda: {cotacao['USD']['name']}")
+print(f"Data: {cotacao['USD']['create_date']}")
+print(f"Valor Atual: R$ {cotacao['USD']['bid']}")
